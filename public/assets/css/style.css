@@ -1,8 +1,11 @@
 body{
     background-color: #000000;
+    
 }
 .container {
-    background-color: #C5C6C7
+    background-color: #C5C6C7;
+    padding: initial;
+
 }
 
 .list-container .card {
@@ -36,15 +39,24 @@ body{
 
 h1 {
     color: #66FCF1;
+    font-size: 6.5rem;
 }
 
 .jumbotron {
     background-color: #1F2833;
+    padding-left: 75px;
+    color: #FFF;
+    margin-bottom: 4rem;
+    border-bottom: 20px;
+    border-color:#414141;
+    border-bottom-style: solid;
+    border-radius: 0;
 }
 
 form, #snippetCard {
     padding: 5px;
     background-color: #6E757C;
+    margin-top: 35px;
 }
 
 #addSnippet {
@@ -61,6 +73,35 @@ form, #snippetCard {
     color: #45A29E;
 }
 
+
+@media  (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1500px;
+        margin-top: 100px;
+    }
+}
+
+.btn.btn-secondary.dropdown-toggle {
+    width: 64%;
+    padding-left: 10px;
+    margin-left: 56px;
+    height: 80px;
+}
+.btn.btn-secondary.dropdown-toggle.orderby{
+    margin-left: -32px;
+    min-width: 180px;
+}
+[name="searchForm"]{
+    margin-left:-10px;  
+    margin-right: 40px;
+  
+}
+.list-container.snippets{
+    margin-top: 35px;
+    margin-left: 70px;
+   
+
+}
 #tagUL {
     list-style: none;
 }
@@ -100,3 +141,13 @@ form, #snippetCard {
     margin: 1.5px;
 }
 
+#detailSnippetArea {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+#tagArea {
+    margin-top: 29px;
+}
